@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="academlo icon" href="favicon.ico" type="image/x-icon">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I am Eduardo, Web Developer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/front-cover.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/services.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
+  <script defer src="js/nav.js" difer></script>
+</head>
+
+<body>
+  <header class="topheader">
+    <nav class="topnav">
+      <a href="#" class="logo">
+        <img class="logo__img" height="50" width="40" src="img/foto02-removebg.png" alt="Eduardo Web Developer">
+        <div>
+          <span class="logo__name">Eduardo</span><br>
+          Web Developer
+        </div>
+      </a>
+
+      <button class="menu--open" aria-label="Abrir Menú">
+        <img src="img/menu.svg" alt="abrir menú">
+        <!--<i class='bx bx-menu'></i>-->
+      </button>
+      <ul class="menu menu--opener">
+        <button class="menu--close" aria-label="Cerrar Menú">
+          <img src="img/close-icon.svg" alt="cerrar menú">
+        </button>
+        <!--  <li><a href="#home" class="menu__link">Home</a></li> -->
+        <li><a href="#skills" class="menu__link">Mis habilidades</a></li>
+        <li><a href="#about" class="menu__link">Acerca de mí</a></li>
+        <li><a href="#services" class="menu__link">Servicios</a></li>
+        <li><a href="#portfolio" class="menu__link">Mi Portafolio</a></li>
+        <li><a href="#contact" class="menu__link">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="front-cover" id="front-cover">
+    <img class="front-cover-decor" src="img/decor.svg"">
+    <div class=" portrait">
+
+    <img class="portrait__background" src="img/vector.svg"">
+      <img class=" portrait__picture" src="img/foto02-removebg.png" alt=" Eduardo Web Developer">
+    </div>
+    <div class="top-area">
+      <div class="headlines">
+        <h1><span class="headlines__greeting">Hola, soy Eduardo</span><br />Desarrollador<br />Web Front End</h1>
+      </div>
+      <div class="social">
+        <a class="social__linkedin" target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardo-helfer/">
+          <img src="img/cib_linkedin-in.svg" alt="LinkedIn">
+        </a>
+        <a class="social__instagram" target="_blank" rel="noopener"
+          href="https://wa.me/51930674423?text=Hello%20Eduardo%20I've%20seen%20your%20portfolio%20let's%20talk%20about%20a%20hiring.">
+          <img class="social__whatsapp-icon" src="img/whatsapp-logo.svg" alt="WhatsApp">
+        </a>
+        <a class="social__twitter" target="_blank" rel="noopener" href="https://twitter.com/edrdoh">
+          <img src="img/twitter.svg" alt="twitter">
+        </a>
+      </div>
+      <a href="mailto:edrdoh@gmail.com" class="mail-btn">
+        <img class="mail-btn__icon" src="img/mail.svg" alt="mail">
+        <span class="mail-btn__call">Contáctame</span>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="skills" id="skills">
+    <h2>HABILIDADES</h2>
+    <div class="rates-container">
+      <div class="rate-box">
+        <div class="rate-graphic">
+          <span class="rate-bar1"></span>
+        </div>
+        <div class="rate-percent">HTML CSS</div>
+        <h3 class="rate-name">
+          Control sobre áreas gráficos, espacios, componsicion de la tipografía responsiva. Metodología BEM.
+        </h3>
+      </div>
+      <div class="rate-box">
+        <div class="rate-graphic">
+          <div class="rate-bar2"></div>
+        </div>
+        <div class="rate-percent">Java- Script</div>
+        <h3 class="rate-name">
+          Manejo sovente del DOM, propagación y ciclo de vida. Estructuras de datos y algoritmos avanzados.</h3>
+      </div>
+      <div class="rate-box">
+        <div class="rate-graphic">
+          <div class="rate-bar3"></div>
+        </div>
+        <div class="rate-percent">React JS</div>
+        <h3 class="rate-name">
+          Apps con múltiples rutas, estados globales, formularios controlados y React Thunks para acceso
+          asíncrono de API.
+        </h3>
+      </div>
+      <div class="rate-box">
+        <div class="rate-graphic">
+          <div class="rate-bar4"></div>
+        </div>
+        <div class="rate-percent">English Spanish</div>
+        <h3 class="rate-name">Idioma inglés como segunda lengua nivel avanzado. Comunicción bilingue, redacción,
+          traducción y consulta. Equipos multi-idioma.</h3>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about" id="about">
+    <img class="about-decor" src="img/decor1.svg"">
+    <h2>ACERCA DE MÍ</h2>
+    <p>Desarrollador Full Stack en formación con conocimientos en HTML,CSS, JavaScript y React JS.  Soy alguien que disfruta mucho de la programación como actividad y es muy satisfactorio para mí resolver todo tipo de desafío lógico aplicando los saberes que he acumulado por años.
+    </p>
+    <p>Mi perfil está orientado al logro, la proactividad, la resolución de problemas y actualmente estoy en un proceso de reinvensión para dedicarme profesionalmente a la actividad que más me llena de satisfacción y difrute que es la programación.  Mi experiencia laboral como gestor de negocios vinculados con la educación tecnológica y científica me ha permitido incursionar en el campo de los controles industriales programables PLC y conocer bien los lenguajes y las técnicas para el mando secuencial, supervisión SCADA y los lazos de control con estricta observancia de las condiciones de seguridad industrial.  Considero que mi experiencia en automatización industrial y la programación de controladores en leguajes C/C++ es uno de mis principales activos.<br />
+    Busco oportunidades que me permitan aprender cada día a través de retos, trabajo en equipo y contribuir así al desarrollo de aplicaciones con excelencia y éxito comercial.
+    </p>
+
+    <div class=" about-container">
+
+    <div class="about-box">
+      <img src="img/URP.png" class="about-logo-img" alt="Urp">
+      <p class="about-school">URP</p>
+      <p class="about-years">1991 - 1999</p>
+    </div>
+    <div class="about-box">
+      <div class="about-box">
+        <img src="img/logo_academlo5.png" class="about-logo-img" alt="UVM">
+        <p class="about-school">Academlo</p>
+        <p class="about-years">2022</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="services" id="services">
+    <h2>SERVICIOS</h2>
+    <div class="services-container">
+
+      <div class="service-box">
+
+        <div class="service-iconbox">
+          <div class="service-icon-square">
+            <img src="icons/pencil.svg" alt="Web Design" class="service-icon">
+          </div>
+          <p class="service-name">Diseño Web</p>
+          <p class="service-description">Diseño responsivo, con criterio estético, intuitivo y ergonómico.<br /><br />
+          </p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-iconbox">
+          <div class="service-icon-square">
+            <img src="icons/web.svg" alt="Web Development" class="service-icon">
+          </div>
+          <p class="service-name">Desarrollo Web</p>
+          <p class="service-description">Fiel reproducción de la composicón gráfica en maquetado Web, intefaz amigable y
+            plácida experiencia de usuario.</p>
+        </div>
+      </div>
+
+      <div class="service-box">
+        <div class="service-iconbox">
+          <div class="service-icon-square">
+            <img src="icons/search.svg" alt="API" class="service-icon">
+          </div>
+          <p class="service-name">Interfaz API</p>
+          <p class="service-description">
+            Webs con búsquedas controladas, paginación y funciones CRUD conservando consistencia del diseño
+            relacional.
+          </p>
+        </div>
+      </div>
+
+
+      <div class="service-box">
+        <div class="service-iconbox">
+          <div class="service-icon-square">
+            <img src="icons/speakerphone.svg" alt="Comunicación" class="service-icon">
+          </div>
+          <p class="service-name">Comunicación</p>
+          <p class="service-description">
+            Documentación en inglés y español, diagramas UML y habilidades
+            blandas para equipos, congeniable con liderazgo constructivo.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="portfolio" id="portfolio">
+    <h2>MI PORTAFOLIO</h2>
+
+    <div class="portfolio-container">
+
+      <a href="https://a-pokemon-pokedex.netlify.app/" target="_blank" rel="noopener" class="portfolio-box">
+        <img src="img/pokedex.png" class="portfolio-image" alt="Pokedex App">
+        <p class="portfolio-item">Pokemon search through</p>
+      </a>
+
+      <a href="https://rick-n-morty-wikiapp.netlify.app/" target="_blank" rel="noopener" class="portfolio-box">
+        <img src="img/rick-morty.png" class="portfolio-image" alt="Rick & Morty Wiki">
+        <p class="portfolio-item">Rick & Morty Wiki App</p>
+      </a>
+
+      <a href="https://current-local-weather.netlify.app/" target="_blank" rel="noopener" class="portfolio-box">
+        <img src="img/weather-app.png" class="portfolio-image" alt="Weather app">
+        <p class="portfolio-item">Management Web</p>
+      </a>
+
+      <a href="https://alphacoders-wave-cafe.netlify.app/" target="_blank" rel="noopener" class="portfolio-box">
+        <img src="img/wave-cafe.png" class="portfolio-image" alt="Wave Cafe E-Commerce">
+        <p class="portfolio-item">Wave Cafe E-Commerce</p>
+      </a>
+    </div>
+  </section>
+
+
+  <section class="contact" id="contact">
+    <h2>CONTACTO</h2>
+    <div class="contact-container">
+      <div class="contact-box">
+        <img src="img/phone.svg" class="contact-icon" alt="Número celular">
+        <p class="contact-means">Número celular</p>
+        <p class="contact-details"><br />+51 930674423<br /><br /> </p>
+      </div>
+      <a class="contact-box" href="mailto:edrdoh@gmail.com">
+        <img src=" img/mail2.svg" class="contact-icon" alt="Email">
+        <p class="contact-means">Email</p>
+        <p class="contact-details"><br />edrdoh@gmail.com<br /><br /> </p>
+      </a>
+      <div class="contact-box">
+        <img src="img/home-addr.svg" class="contact-icon" alt="Home address">
+        <p class="contact-means">Dirección</p>
+        <p class="contact-details">Av de los Precursores #277<br />San Miguel, CP: 15088<br />Lima - Perú</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <br><br><br>
+    <p class="final-line">Actualización ✅ de fecha 07 / 11 / 2022</p>
+  </footer>
+</body>
+
+</html>

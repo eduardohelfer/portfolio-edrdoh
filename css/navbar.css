@@ -1,0 +1,166 @@
+.topheader {
+  box-shadow: 0 3px 3px rgba(106, 106, 106, 0.3);
+  background-color: var(--theme-color);
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.topnav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  max-width: 1024px;
+  margin: 0 auto;
+
+}
+
+/* Logo */
+
+.logo {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.logo:hover {
+  color: var(--primary-color);
+}
+
+.logo__name {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--secondary-color);
+}
+
+.logo__img {
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+/* Menu */
+
+
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 15px;
+}
+
+.menu li {
+  padding: 0 15px;
+  white-space: nowrap;
+}
+
+.menu__link {
+  color: var(--text-color);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.menu__link:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--highlight2-color);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  transition: border 0.3s;
+}
+
+/*
+.menu__link::after {
+  content: "";
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: 0;
+  top: calc(100% + 2px);
+  width: 100%;
+  height: 2px;
+
+  opacity: 0;
+  transition: opacity 0.3s;
+}*/
+
+.menu__link.selected::after,
+.menu__link:hover::after {
+  opacity: 1;
+}
+
+.menu--close,
+.menu--open {
+  display: none;
+}
+
+
+@media (max-width: 950px) {
+  /* Menu */
+
+  .menu {
+    flex-direction: column;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    align-items: center;
+    background-color: var(--menu-mobile-bgcolor);
+    height: 100%;
+    overflow-y: auto;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+  }
+
+  .menu li {
+    padding: 12px;
+    white-space: nowrap;
+
+  }
+
+  .menu__link {
+    color: var(--highlight2-color);
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 60px;
+    width: 350px;
+    border: var(--highlight2-color) 2px solid;
+  }
+
+  .menu__link:hover {
+    color: var(--primary-color);
+  }
+
+  .menu--close,
+  .menu--open {
+    display: block;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  .menu--close {
+    align-self: flex-end;
+    border: none;
+    background: var(--text-color);
+    cursor: pointer;
+    padding: 20px 15px;
+  }
+
+  .menu--opener {
+    opacity: 0.9;
+    pointer-events: all;
+    z-index: 9;
+  }
+
+  menu--close:focus:not(:focus-visible),
+  menu--open:focus:not(:focus-visible) {
+    outline: none;
+  }
+}

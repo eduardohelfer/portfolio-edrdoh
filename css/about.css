@@ -1,0 +1,48 @@
+.about {
+  margin-top: 100px;
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 5rem 0 2rem;
+  position: relative;
+}
+
+.about-decor {
+  position: absolute;
+  margin-left: 50%;
+  margin-top: 0px;
+  height: 20vh;
+  top: -40px;
+  z-index: -2;
+}
+
+.about-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.about-box {
+  min-width: 220px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  color: var(--text-color-inverse);
+}
+
+.about-logo-img {
+  height: 170px;
+}
+
+.about-school {
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 0.4rem;
+}
+
+.about-years {
+  font-size: 0.8rem;
+  line-height: 0.2rem;
+}

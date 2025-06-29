@@ -27,7 +27,26 @@
   position: relative;
 }
 
-.publications-image {
+@keyframes picAnimation {
+  to {
+    transform: position(fixed) width(270px) top(-5px) left(50%) translateX(-50%);
+  }
+}
+
+@keyframes deAnimation {
+  to {
+    transform: position(absolute) width(225px) top(0px) left(0px) translateX(0px);
+  }
+}
+
+.publications-image_X {
+  position: absolute;
+  width: 225px;
+  top: 0px;
+  left: 0px;
+}
+
+#publication1 {
   position: absolute;
   width: 225px;
   top: 0px;
@@ -35,15 +54,75 @@
   transition: width 200ms ease, top 200ms ease;
 }
 
-.publications-image:hover {
-  width: 270px;
+.hover1 #publication1 {
+  position: fixed;
+  width: 770px;
   top: -5px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
   transition: top 200ms ease, width 200ms ease;
+  animation: picAnimation 1s forwards 0.3s;
 }
 
+#publication2 {
+  position: absolute;
+  width: 225px;
+  top: 0px;
+  left: 0px;
+  transition: width 200ms ease, top 200ms ease;
+}
+
+.hover2 #publication2 {
+  position: fixed;
+  width: 770px;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: top 200ms ease, width 200ms ease;
+  animation: picAnimation 1s forwards 0.3s;
+}
+
+#publication3 {
+  position: absolute;
+  width: 225px;
+  top: 0px;
+  left: 0px;
+  transition: width 200ms ease, top 200ms ease;
+  animation: deAnimation 1s forwards 0.3s;
+
+}
+
+.hover3 #publication3 {
+  position: fixed;
+  width: 770px;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: top 200ms ease, width 200ms ease;
+  animation: picAnimation 1s forwards 0.3s;
+}
+
+#publication4 {
+  position: absolute;
+  width: 225px;
+  top: 0px;
+  left: 0px;
+  transition: width 200ms ease, top 200ms ease;
+}
+
+.hover4 #publication4 {
+  position: fixed;
+  width: 770px;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  transition: top 200ms ease, width 200ms ease;
+  animation: picAnimation 1s forwards 0.3s;
+}
 
 .publications-item {
   font-size: 1rem;

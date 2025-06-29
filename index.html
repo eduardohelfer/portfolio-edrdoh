@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/about.css">
   <link rel="stylesheet" href="css/services.css">
   <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/publications.css">
   <link rel="stylesheet" href="css/contact.css">
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js" defer></script>
   <script defer src="js/nav.js" difer></script>
@@ -257,20 +258,20 @@
     <div class="publications-container">
 
       <a href="#publications" rel="noopener" class="publications-box">
-        <img src="img/ICreativa-N1-1-EHelfer.png" class="publications-image" alt="ICreativa11">
+        <img src="img/ICreativa-N1-1-EHelfer.png" class="publications-image" id="publication1" alt="ICreativa">
         <p class="publications-item">En la revista Informática Creativa, publicada en Lima-Perú en el año 1990.</p>
       </a>
 
       <a href="#publications" rel="noopener" class="publications-box">
-        <img src="img/ICreativa-N1-2-EHelfer.png" class="publications-image" alt="ICreativa11">
+        <img src="img/ICreativa-N1-2-EHelfer.png" class="publications-image" id="publication2" alt="ICreativa">
         <p class="portfolio-item">Información de utilidad para ordenadores de 8 bits, incluyendo listados de programas.</p>
       </a>
       <a href="#publications" rel="noopener" class="publications-box">
-        <img src="img/ICreativa-N2-1-EHelfer.png" class="publications-image" alt="ICreativa11">
+        <img src="img/ICreativa-N2-1-EHelfer.png" class="publications-image" id="publication3" alt="ICreativa">
         <p class="publications-item">Mis contribuciones fueron aplicaciones en Basic que inlcuían un sistema de verificación para evitar los errores tipográficos al transcribir el código.</p>
       </a>
       <a href="#publications" rel="noopener" class="publications-box">
-        <img src="img/ICreativa-N2-2-EHelfer.png" class="publications-image" alt="ICreativa11">
+        <img src="img/ICreativa-N2-2-EHelfer.png" class="publications-image" id="publication4" alt="ICreativa">
         <p class="publications-item">La temática de mis programas fué del tipo utilitario para procesar imágenes, textos y también juegos interactivos de estrategia.</p>
       </a>
     </div>
@@ -301,6 +302,37 @@
     <br><br><br>
     <p class="final-line">Actualización ✅ de fecha 17 / 02 / 2023</p>
   </footer>
+
+  <script>
+    const publication1 = document.getElementById("publication1");
+    publication1.addEventListener("mouseover", () =>  {
+      document.body.classList.add("hover1");
+    });
+    publication1.addEventListener("animationend", () => {
+      document.body.classList.remove("hover1");
+          });
+    const publication2 = document.getElementById("publication2");
+    publication2.addEventListener("mouseover", () =>  {
+      document.body.classList.add("hover2");
+    });
+    publication2.addEventListener("animationend", () => {
+      document.body.classList.remove("hover2");
+    });
+    const publication3 = document.getElementById("publication3");
+    publication3.addEventListener("mouseover", () =>  {
+      document.body.classList.add("hover3");
+    });
+    publication3.addEventListener("animationend", () => {
+      document.body.classList.remove("hover3");
+    });
+    const publication4 = document.getElementById("publication4");
+    publication4.addEventListener("mouseover", () =>  {
+      document.body.classList.add("hover4");
+    });
+    publication4.addEventListener("animationed", () => {
+      document.body.classList.remove("hover4");
+    });
+  </script>
 </body>
 
 </html>
